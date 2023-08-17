@@ -1,0 +1,17 @@
+{
+	"name": "Exploration",
+	"properties": {
+		"content": {
+			"query": "SELECT Country, count(*) as TotalAthletes from athletes\nGROUP by Country\nORDER by TotalAthletes DESC;\n\nSELECT * FROM medals;\nSELECT Country, SUM(Gold) as Gold,\nsum(Silver) as Silver,\nsum(Bronze) as Bronze from medals\nGROUP by Country\norder by Gold,Silver,Bronze DESC;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "olympicdb",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
