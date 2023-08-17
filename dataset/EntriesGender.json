@@ -1,0 +1,39 @@
+{
+	"name": "EntriesGender",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "github",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "EntriesGender.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Discipline",
+				"type": "String"
+			},
+			{
+				"name": "Female",
+				"type": "String"
+			},
+			{
+				"name": "Male",
+				"type": "String"
+			},
+			{
+				"name": "Total",
+				"type": "String"
+			}
+		]
+	}
+}

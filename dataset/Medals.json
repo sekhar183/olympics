@@ -1,0 +1,51 @@
+{
+	"name": "Medals",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "github",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Medals.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Rank",
+				"type": "String"
+			},
+			{
+				"name": "Team_Country",
+				"type": "String"
+			},
+			{
+				"name": "Gold",
+				"type": "String"
+			},
+			{
+				"name": "Silver",
+				"type": "String"
+			},
+			{
+				"name": "Bronze",
+				"type": "String"
+			},
+			{
+				"name": "Total",
+				"type": "String"
+			},
+			{
+				"name": "Rank by Total",
+				"type": "String"
+			}
+		]
+	}
+}
