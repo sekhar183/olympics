@@ -54,7 +54,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Athletes_processed",
+						"referenceName": "Athletes_copied",
 						"type": "DatasetReference"
 					}
 				]

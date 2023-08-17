@@ -1,5 +1,5 @@
 {
-	"name": "Athletes_processed",
+	"name": "Athletes_copied",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLS",
